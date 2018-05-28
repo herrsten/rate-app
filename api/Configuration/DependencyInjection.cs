@@ -7,7 +7,7 @@ namespace RatingApi.Configuration
     {
         public static IServiceCollection AddLocalDependencies(this IServiceCollection services)
         {  
-            services.AddSingleton<IRatingsRepository, RatingsListRepository>(); //RatingsInMemory-repository? support different inplementations
+            services.AddSingleton<IRatingsRepository, RatingsListRepository>(); 
             return services;
         }
     }

@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RatingApi.Configuration;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace RatingApi
