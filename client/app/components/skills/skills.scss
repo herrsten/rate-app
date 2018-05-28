@@ -1,0 +1,26 @@
+@import "../../style/colors";
+
+
+.striped {
+    background:$lightgrey;
+}
+
+.header h1 {
+    color: $grey;
+}
+
+.content-container {
+    display: grid;
+    grid-template-areas: "inputArea"
+                        "contentArea";
+    grid-row-gap: 0.5rem;
+    grid-template-columns: 48.1rem;
+}
+
+.input-area {
+    grid-area: inputArea;
+}
+
+.content-area {
+    grid-area: contentArea;
+}

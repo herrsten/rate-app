@@ -1,0 +1,29 @@
+.skill-container {
+    display: grid;
+    grid-template-areas: "skillName ratingInput deleteButton";
+    grid-template-columns: 11rem 33.1rem 3rem;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    .fa {
+        cursor: pointer;
+        justify-self: right;
+        padding: 0.75rem;
+    }
+}
+
+.skill-name {
+    grid-area: skillName;
+    padding: 0.75rem
+}
+
+.scores {
+    grid-area: ratingInput;
+    .scores-wrapper {
+        float: right;
+        div {
+            display: inline-block;
+            padding: 0.25rem;
+        }
+    }
+}
+

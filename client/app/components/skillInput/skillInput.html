@@ -1,0 +1,22 @@
+<div class="input-container">
+        <div class="text-input">
+                <input type="text"
+                       class="input"
+                       ng-change="$ctrl.validate()"
+                       ng-model="$ctrl.skillModel.name"
+                       placeholder="Add skill..." />
+        </div>
+        <div class="rating-input">
+                <div ng-repeat="score in $ctrl.scores">
+                        <score score="score"
+                               is-selected="score === $ctrl.selectedScore"
+                               on-score-selected="$ctrl.setScore(score)"></score>
+                </div>
+        </div>
+        <div class="button-container">
+                <button type="button"
+                        class="button button-success"
+                        ng-click="$ctrl.addSkill()"
+                        ng-disabled="!$ctrl.isValid">Add skill</button>
+        </div>
+</div>

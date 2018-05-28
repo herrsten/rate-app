@@ -1,0 +1,14 @@
+<div class="skill-container">
+    <div class="skill-name">{{$ctrl.skill.name}}</div>
+    <div class="scores">
+        <div class="scores-wrapper">
+            <div ng-repeat="score in $ctrl.scores">
+                <score score="score"
+                       on-score-selected="$ctrl.setScore(score)"
+                       is-selected="score === $ctrl.selectedScore"></score>
+            </div>
+        </div>
+    </div>
+    <span class="fa fa-times fa-lg"
+          ng-click="$ctrl.remove()"></span>
+</div>

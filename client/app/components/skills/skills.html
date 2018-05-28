@@ -1,0 +1,18 @@
+<header class="header">
+    <h1>Skills</h1>
+</header>
+<div class="content-container">
+    <div class="input-area">
+        <skill-input on-save="$ctrl.addSkill(skill)">
+        </skill-input>
+    </div>
+    <div class="content-area">
+        <div ng-repeat="skill in $ctrl.skills | orderBy: 'id'"
+             ng-class-odd="'striped'">
+            <skill skill="skill"
+                   on-skill-removed="$ctrl.removeSkill(skill)"
+                   on-score-updated="$ctrl.updateSkill(skill)">
+            </skill>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+@import "./colors";
+
+.button {
+    background-color: $white;
+    border: 0.5px solid $grey;
+    color: $grey;
+    padding: 8px;
+    border-radius:2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor:pointer;
+ 
+    &:active {
+        outline:0;
+    }
+    &:focus {
+        outline:0;
+    }
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &.button-success {
+        background: $success;
+        color: $white;
+        border-color: $success;  
+    }
+
+    &.button-primary {
+        background: $primary;
+        color: $white;
+        border-color: $primary;
+    }
+}
+
+.input {
+    padding: 8px;
+    border: 0.5px solid $grey;
+    border-radius: 2px;
+    background: $white;
+    color: $grey;
+
+    &::placeholder {
+        color:$grey;
+    }
+    &:focus {
+        outline-color: $primary;
+    }
+}
