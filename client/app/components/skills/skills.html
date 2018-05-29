@@ -5,6 +5,7 @@
     <div class="input-area">
         <skill-input on-save="$ctrl.addSkill(skill)">
         </skill-input>
+    <hr>        
     </div>
     <div class="content-area">
         <div ng-repeat="skill in $ctrl.skills | orderBy: 'id'"
